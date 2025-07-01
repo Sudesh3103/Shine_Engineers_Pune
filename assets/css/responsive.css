@@ -1,0 +1,230 @@
+@media screen and (min-width:575px) {
+    .md-mb-0 {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    h1.title {
+        line-height: 60px;
+        font-size: 50px;
+    }
+    .service-card {
+        padding: 30px 10px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    h1.title {
+        line-height: 45px;
+        font-size: 35px;
+    }
+    .customer-card {
+        padding: 15px;
+    }
+    .banner {
+        padding-top: 60px;
+    }
+    a.post-link {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    a.more-btn {
+        font-size: 14px;
+    }
+    p.date {
+        padding: 15px 0;
+        font-size: 12px;
+    }
+    .team-member-info a {
+        font-size: 16px;
+    }
+    .action-content-inner h2 {
+        font-size: 30px;
+    }
+    .call-to-action::after {
+        display: none;
+    }
+    .about-content {
+        padding-left: 0;
+    }
+    .video-sec img {
+        height: 250px;
+    }
+    .call-to-action-img {
+        text-align: right;
+        margin-top: 50px;
+    }
+    .work-history {
+        margin-bottom: 80px;
+    }
+    .video-sec .video-play {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .call-to-action::after {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .call-to-action-img img {
+        width: 60%;
+    }
+    .call-to-action-img {
+        text-align: center;
+    }
+    .action-content {
+        padding-top: 50px;
+    }
+    p.about-li {
+        font-size: 16px;
+    }
+    .post-details {
+        padding: 15px 10px 0px 10px;
+    }
+    a.post-link {
+        font-size: 17px;
+    }
+    .video-sec img {
+        width: auto;
+        height: 250px;
+    }
+    a.play-video.video-btn img {
+        width: 50px;
+        height: auto;
+    }
+    .slider-nav .swiper-button-next:after,
+    .slider-nav .swiper-button-prev:after {
+        font-size: 20px;
+    }
+    .slider-nav div {
+        width: 35px;
+        height: 35px;
+    }
+    .slider-nav {
+        width: 95px;
+        bottom: 20px;
+    }
+    .faq-slider div::after {
+        font-size: 20px;
+    }
+    .faq-slider div {
+        padding: 10px;
+    }
+    .action-content-inner {
+        text-align: center;
+    }
+    .faq-que button {
+        font-size: 16px;
+    }
+    .fixed-content {
+        margin-bottom: 40px;
+        display: block;
+    }
+    .work-history {
+        margin-bottom: 65px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .banner {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .customer-card {
+        text-align: center;
+    }
+    .customer-info {
+        justify-content: center;
+        display: block;
+    }
+    /* .rating {
+        justify-content: center;
+    } */
+    .customer-img {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .banner-btn-div {
+        justify-content: center;
+    }
+    .content {
+        text-align: center;
+    }
+    img.banner-img {
+        width: auto;
+        height: 330px;
+    }
+    .history-bg {
+        padding: 25px 0;
+    }
+    .custom-btn {
+        padding: 10px 18px;
+    }
+    .signature img {
+        margin-left: 12px;
+    }
+    p.sm-title {
+        font-size: 15px;
+    }
+    h1.title {
+        line-height: 25px;
+        font-size: 25px;
+    }
+    .action-content-inner h2 {
+        font-size: 30px;
+    }
+    h2.inside-head {
+        font-size: 30px;
+    }
+    .video-sec img {
+        width: auto;
+        height: 180px;
+    }
+    .call-to-action {
+        min-height: 360px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .return-page {
+        display: block;
+        text-align: center;
+    }
+    a.work-name {
+        font-size: 18px;
+    }
+    h5.work-category {
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+    a.play-video {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .signature img {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .subscribe-content h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width:290px) {
+    .custom-btn {
+        padding: 10px 10px;
+    }
+    .signature img {
+        margin-top: 20px;
+    }
+    .video-sec img {
+        height: 150px;
+    }
+}
