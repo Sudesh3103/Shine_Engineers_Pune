@@ -121,6 +121,7 @@
     .fixed-content {
         margin-bottom: 40px;
         display: block;
+        margin-top: 40px;
     }
     .work-history {
         margin-bottom: 65px;

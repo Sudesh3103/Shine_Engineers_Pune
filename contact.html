@@ -58,10 +58,10 @@
                     >
                   </li>
                   <li>
-                    <a href="mailto:shineengineers1972@gmail.com"
-                      ><i class="icofont-email ico-top"></i>
-                      <span>shineengineers1972@gmail.com</span></a
-                    >
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=marketing@shineengineers.co.in" target="_blank">
+                      <i class="icofont-email ico-top"></i>
+                      <span>marketing@shineengineers.co.in</span>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -157,92 +157,68 @@
 
                   <div class="contact-form mt-4">
                     <form action="mail.php" method="POST">
-                      <div class="row">
-                        <div class="col-sm-6 my-2">
-                          <div class="input-container">
-                            <input
-                              name="first_name"
-                              id="first-name"
-                              class="form-control"
-                              type="text"
-                              required
-                            />
-                            <label class="label" for="first-name"
-                              >First Name</label
-                            >
-                          </div>
-                        </div>
-                        <div class="col-sm-6 my-2">
-                          <div class="input-container">
-                            <input
-                              name="last_name"
-                              id="last-name"
-                              class="form-control"
-                              type="text"
-                              required
-                            />
-                            <label class="label" for="last-name"
-                              >Last Name</label
-                            >
-                          </div>
-                        </div>
-                        <div class="col-sm-6 my-2">
-                          <div class="input-container">
-                            <input
-                              name="email"
-                              id="email"
-                              class="form-control"
-                              type="email"
-                              required
-                            />
-                            <label class="label" for="email">Your Email</label>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 my-2">
-                          <div class="input-container">
-                            <input
-                              name="phone"
-                              id="phone"
-                              class="form-control"
-                              type="text"
-                              required
-                            />
-                            <label class="label" for="phone"
-                              >Phone Number</label
-                            >
-                          </div>
-                        </div>
-                        <div class="col-md-12 my-2">
-                          <div class="input-container">
-                            <input
-                              name="subject"
-                              id="subject"
-                              class="form-control"
-                              type="text"
-                              required
-                            />
-                            <label class="label" for="subject">Subject</label>
-                          </div>
-                        </div>
-                        <div class="col-md-12 my-2">
-                          <div class="input-container">
-                            <textarea
-                              name="message"
-                              id="message"
-                              class="form-control"
-                              rows="5"
-                              required
-                            ></textarea>
-                            <label class="label" for="message">Message</label>
-                          </div>
-                        </div>
-                        <div class="col-12 mt-3">
-                          <button type="submit" class="custom-btn">
-                            Send Message
-                          </button>
-                        </div>
-                      </div>
-                    </form>
+  <div class="row">
+    <!-- First Name -->
+    <div class="col-sm-6 my-2">
+      <div class="input-container">
+        <input name="first_name" id="first-name" class="form-control" type="text"
+               required pattern="^[A-Za-z\s]+$" title="Please enter a valid first name (letters only)" />
+        <label class="label" for="first-name">First Name</label>
+      </div>
+    </div>
+
+    <!-- Last Name -->
+    <div class="col-sm-6 my-2">
+      <div class="input-container">
+        <input name="last_name" id="last-name" class="form-control" type="text"
+               required pattern="^[A-Za-z\s]+$" title="Please enter a valid last name (letters only)" />
+        <label class="label" for="last-name">Last Name</label>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="col-sm-6 my-2">
+      <div class="input-container">
+        <input name="email" id="email" class="form-control" type="email"
+               required title="Please enter a valid email address" />
+        <label class="label" for="email">Your Email</label>
+      </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="col-sm-6 my-2">
+      <div class="input-container">
+        <input name="phone" id="phone" class="form-control" type="tel"
+               required pattern="^\+?\d{10}$" title="Please enter a valid phone number (10 digits)" />
+        <label class="label" for="phone">Phone Number</label>
+      </div>
+    </div>
+
+    <!-- Subject -->
+    <div class="col-md-12 my-2">
+      <div class="input-container">
+        <input name="subject" id="subject" class="form-control" type="text"
+               required minlength="3" title="Subject must be at least 3 characters" />
+        <label class="label" for="subject">Subject</label>
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="col-md-12 my-2">
+      <div class="input-container">
+        <textarea name="message" id="message" class="form-control" rows="5"
+                  required minlength="10" title="Message must be at least 10 characters"></textarea>
+        <label class="label" for="message">Message</label>
+      </div>
+    </div>
+
+    <div class="col-12 mt-3">
+      <button type="submit" class="custom-btn">Send Message</button>
+    </div>
+  </div>
+</form>
+
+
                   </div>
                 </div>
               </div>
@@ -319,34 +295,24 @@
         </div>
 
         <!-- ============Contact end  ======== -->
-        <!-- ===========subscribe ================= -->
-        <div class="subscribe-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="subscribe-content">
-                  <h3>stay Updated with news <br />subscribe newsletter</h3>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <form class="hero-form" action="subscribe.php" method="POST">
-                  <div class="input-group">
-                    <input
-                      type="email"
-                      name="subscriber_email"
-                      class="form-control subscribtion-input"
-                      placeholder="Enter Your Email"
-                      required
-                    />
-                    <button type="submit" class="custom-btn bg-dark">
-                      Subscribe
-                    </button>
-                  </div>
-                </form>
-              </div>
+           <!-- Newsletter Subscription Form -->
+<div class="subscribe-area py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+                <h3 class="text-white">Stay Updated with News <br>Subscribe Newsletter</h3>
             </div>
-          </div>
+            <div class="col-md-6">
+                <form action="subscribe.php" method="POST">
+                    <div class="input-group">
+                        <input type="email" name="subscriber_email" class="form-control" placeholder="Enter Your Email" required>
+                        <button type="submit" class="btn btn-dark">Subscribe</button>
+                    </div>
+                </form>
+            </div>
         </div>
+    </div>
+</div>
         <!-- ===========subscribe end================= -->
         <!-- ===================footer ================ -->
         <footer>
@@ -369,10 +335,17 @@
                           </li>
 
                           <li>
-                            <i class="icofont-email"></i>
-                            <div class="contact-list">
-                              <p>shineengineers1972@gmail.com</p>
-                            </div>
+                            <a class="text-white" href="https://mail.google.com/mail/?view=cm&fs=1&to=marketing@shineengineers.co.in" target="_blank">
+                              <i class="icofont-email ico-top"></i>
+                              <span>marketing@shineengineers.co.in</span>
+                            </a>
+                          </li>
+
+                          <li>
+                            <a class="text-white" href="https://mail.google.com/mail/?view=cm&fs=1&to=info@shineengineers.co.in" target="_blank">
+                              <i class="icofont-email ico-top"></i>
+                              <span>info@shineengineers.co.in</span>
+                            </a>
                           </li>
 
                           <li>
@@ -549,6 +522,16 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- ======custom script====== -->
     <script src="assets/js/app.js"></script>
+    <script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  let form = this;
+  if (!form.checkValidity()) {
+    event.preventDefault();
+    event.stopPropagation();
+    alert("Please fill out all fields correctly before submitting.");
+  }
+});
+</script>
   </body>
 
   <!-- Mirrored from codebasket.xyz/template/syntax/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 May 2025 06:54:23 GMT -->

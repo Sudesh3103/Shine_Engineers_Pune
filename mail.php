@@ -109,8 +109,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 465;
         
         // Recipients
-        $mail->setFrom('shineengineers1972@gmail.com', 'Contact Form System');
-        $mail->addAddress('shineengineers1972@gmail.com', 'Website Admin');
+        $mail->setFrom('info@shineengineers.co.in', 'Contact Form System');
+        $mail->addAddress('info@shineengineers.co.in', 'Website Admin');
         $mail->addReplyTo($email, $fullName);
         
         // Content
@@ -274,12 +274,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p>You have received a new message through your website contact form. Please review the details below and respond promptly.</p>
             </div>
             
-            <div class='priority-notice'>
-                <strong>⚡ Action Required:</strong> New contact inquiry requires your attention and response.
-            </div>
-            
             <div class='contact-details'>
-                <div class='detail-header'>📋 Contact Information</div>
+                <div class='detail-header'> Contact Information</div>
                 
                 <div class='field-row'>
                     <div class='field-label'>Full Name:</div>
@@ -307,7 +303,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if (!empty($messageInput)) {
             $email_body .= "<div class='message-section'>
-                        <div class='message-header'>💬 Message Details</div>
+                        <div class='message-header'> Message Details</div>
                         <div class='message-content'>" . htmlspecialchars($messageInput) . "</div>
                     </div>";
         }
